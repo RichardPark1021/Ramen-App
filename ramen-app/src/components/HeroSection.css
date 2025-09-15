@@ -1,0 +1,67 @@
+.hero-container {
+  position: relative;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1; /* Ensure content is displayed above the video */
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.hero-container h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-top: 100px;
+}
+
+.hero-container p {
+  margin-top: 8px;
+  font-size: 32px;
+  color: #fff;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+@media screen and (max-width: 760px) {
+  .hero-container h1 {
+    color: #fff;
+    font-size: 70px;
+    margin-top: 150px;
+  }
+  
+  .hero-container p {
+    font-size: 30px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,76 @@
+.active {
+  background-color: rgb(157, 41, 51);
+  padding: 1.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: black;
+}
+
+nav .name {
+  color:aliceblue;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .menu {
+  color:aliceblue;
+  display: none;
+  position: absolute;
+  font-size: 2.5rem;
+  right: 0;
+  margin-right: 20px;;
+}
+
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav ul li a {
+  color:aliceblue;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: aliceblue;
+  background-color: rgb(157, 41, 51);
+  padding: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .active {
+    background-color: red;
+    padding: 1em;
+  }
+
+  nav .menu {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+}

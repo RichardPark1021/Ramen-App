@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.cards-container h1 {
+  font-size: 56px;
+  color: rgb(157, 41, 51);
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+}
+
+@media (max-width: 1250px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
